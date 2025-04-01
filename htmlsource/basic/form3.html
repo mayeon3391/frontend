@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>상품 주문서</h1>
+    <form action="">
+      <fieldset>
+        <legend>개인정보</legend>
+        <div>
+          <li>
+            <label for="name">이름</label>
+            <input type="name" name="name" id="name" placeholder="여백없이 입력" required />
+          </li>
+        </div>
+        <div>
+          <li>
+            <label for="tel">연락처</label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="연락가능한 번호"
+              required
+              pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+            />
+          </li>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>배송지 정보</legend>
+
+        <div>
+          <li><label for="text">주소</label> <input type="text" name="local" id="loacl" size="50" required /></li>
+        </div>
+        <div>
+          <li>
+            <label for="phon">전화번호</label>
+            <input type="text" name="phon" id="phon" size="30" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" />
+          </li>
+        </div>
+        <div>
+          <li><label for="text">메모</label> <textarea name="memo" id="memo" rows="3" cols="50"></textarea></li>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>주문정보</legend>
+
+        <li>
+          <input type="checkbox" name="order" id="" placeholder="" /> <label for="">과테말라 안티구아 (100g)</label>
+          <input type="number" name="num1" id="num1" min="1" max="10" value="0" />개
+        </li>
+        <div>
+          <li>
+            <input type="checkbox" name="order" id="" placeholder="" /> <label for="">인도네시아 만델링 (100g)</label>
+            <input type="number" name="num2" id="num2" min="1" max="10" value="0" />개
+          </li>
+        </div>
+        <div>
+          <li>
+            <input type="checkbox" name="order" id="" placeholder="" /> <label for="">탐라는도다(블랜딩) (100g)</label>
+            <input type="number" name="num3" id="num3" min="1" max="10" value="0" />개
+          </li>
+        </div>
+      </fieldset>
+      <div>
+        <input type="submit" value="주문하기" />
+        <input type="reset" value="다시 작성" />
+        <button type="button">버튼</button>
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+      </div>
+    </form>
+  </body>
+</html>
