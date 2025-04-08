@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const planetKor = ["수성", "금성", "지구", "화성", "목성", "토성", "천왕성", "해왕성"];
+      const planetEng = ["Mercury", "Venus", "Earth", "Mars", "Jupoter", "Saturn", "Uranus", "Neptune"];
+
+      // 한글 행성 이름을 입력 받은 후 영어이름 출력하기
+      const input = prompt("한글 행성 이름을 입력하세요.");
+
+      const index = planetKor.indexOf(input);
+      if (index !== -1) {
+        document.write(`입력한 한글 행성 이름은 ${planetKor[index]}입니다.<br>`);
+        document.write(`영어 이름은 ${planetEng[index]}입니다.<br>`);
+      } else {
+        alert("입력한 행성 이름이 목록에 없습니다.");
+      }
+    </script>
+  </body>
+</html>

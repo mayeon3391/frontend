@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 전체 여백 0 */
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      /* body 배경색 : #ecf0f1 */
+      body {
+        background-color: #ecf0f1;
+      }
+
+      /* wrapper : max-width : 60rem, width:100% */
+      .wrapper {
+        width: 100%;
+        max-width: 60rem;
+        margin: 2rem auto;
+      }
+
+      /* flexbg : flex 컨테이너 */
+      .flexbg {
+        display: flex;
+      }
+
+      /* main : 배경색 흰색, 안쪽여백 25, order 2 */
+      .flexbg main {
+        background: white;
+        padding: 25px;
+        order: 2;
+      }
+      /* left : 배경색 #3498db, order 1  */
+      .flexbg .sidebar {
+        padding: 25px;
+        width: 20%;
+      }
+      .flexbg .left {
+        background: #3498db;
+        order: 1;
+      }
+      /* right : 배경색 #34495e, order 3  */
+      .flexbg .right {
+        background: #34495e;
+        order: 3;
+      }
+
+      /* 481~768 */
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          /* display: flex; */
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .sidebar {
+          width: 50%;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+      }
+
+      /* 0~480 */
+      @media screen and (max-width: 480px) {
+        .flexbg .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus sapiente provident, nemo cumque quos
+          voluptates delectus est explicabo laudantium vel ea nam fugiat beatae dolor numquam assumenda magni asperiores
+          ut. Beatae doloribus id obcaecati excepturi ullam perferendis alias vero consectetur, quos deserunt ad aliquam
+          nulla, repellat eius assumenda voluptatem est dolor! Totam voluptas recusandae molestias magni quae
+          necessitatibus sint tempora consequuntur, corporis optio fugiat delectus sequi suscipit nulla consequatur
+          consectetur, possimus dolor ex qui ea? Et possimus laborum quasi beatae nemo! Veniam recusandae dicta sunt
+          deleniti quaerat quia dolor minus et. Obcaecati soluta voluptatibus itaque! Aliquid tempora quia placeat
+          voluptatum?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus sapiente provident, nemo cumque quos
+          voluptates delectus est explicabo laudantium vel ea nam fugiat beatae dolor numquam assumenda magni asperiores
+          ut. Beatae doloribus id obcaecati excepturi ullam perferendis alias vero consectetur, quos deserunt ad aliquam
+          nulla, repellat eius assumenda voluptatem est dolor! Totam voluptas recusandae molestias magni quae
+          necessitatibus sint tempora consequuntur, corporis optio fugiat delectus sequi suscipit nulla consequatur
+          consectetur, possimus dolor ex qui ea? Et possimus laborum quasi beatae nemo! Veniam recusandae dicta sunt
+          deleniti quaerat quia dolor minus et. Obcaecati soluta voluptatibus itaque! Aliquid tempora quia placeat
+          voluptatum?
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>You might have some latest posts here on the left</p>
+      </aside>
+      <aside class="sidebar right">
+        <p>And some other widgets here on the right</p>
+      </aside>
+    </div>
+  </body>
+</html>

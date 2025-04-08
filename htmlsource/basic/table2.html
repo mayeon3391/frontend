@@ -4,43 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .resume-container {
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 10px;
+        display: inline-block;
+      }
+      table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 800px;
+      }
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        vertical-align: middle;
+      }
+      td[rowspan="2"]:first-child,
+      td:nth-child(4):first-child {
+        background-color: lightgray;
+      }
+      td[rowspan="2"]:not(:first-child),
+      td:nth-child(5):last-child {
+        background-color: white;
+      }
+
+      td:has(> h2) {
+        background-color: red;
+      }
+    </style>
   </head>
   <body>
-    <table border="1" width="600">
-      <tr>
-        <td rowspan="3">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS8uFO98Hp8YnICp--qXCBL7xG7NeN6j-843nl6mS8RTGaTiQW_IlR-9QUH7I18H7AoNM&usqp=CAU"
-            alt=""
-          />
-        </td>
-        <td colspan="4"><h2>이력서</h2></td>
-      </tr>
-      <tr>
-        <td rowspan="2">성명</td>
-        <td rowspan="2" colspan="2">이상혁</td>
-        <td>생년월일</td>
-      </tr>
-      <tr>
-        <td>1996.05.07</td>
-      </tr>
-      <tr>
-        <td>이메일</td>
-        <td colspan="4">&nbsp;</td>
-      </tr>
-      <tr>
-        <td>현주소</td>
-        <td colspan="4">&nbsp;</td>
-      </tr>
-      <tr>
-        <td>연락처</td>
-        <td colspan="4">&nbsp;</td>
-      </tr>
-      <tr>
-        <td>기간</td>
-        <td colspan="2">학력사항</td>
-        <td colspan="2">비고</td>
-      </tr>
-    </table>
+    <div class="resume-container">
+      <table>
+        <tr>
+          <td rowspan="3">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS8uFO98Hp8YnICp--qXCBL7xG7NeN6j-843nl6mS8RTGaTiQW_IlR-9QUH7I18H7AoNM&usqp=CAU"
+              alt=""
+            />
+          </td>
+          <td colspan="4"><h2>이력서</h2></td>
+        </tr>
+        <tr>
+          <td rowspan="2">성명</td>
+          <td rowspan="2" colspan="2">이상혁</td>
+          <td>생년월일</td>
+        </tr>
+        <tr>
+          <td>1996.05.07</td>
+        </tr>
+        <tr>
+          <td>이메일</td>
+          <td colspan="4">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>현주소</td>
+          <td colspan="4">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>연락처</td>
+          <td colspan="4">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>기간</td>
+          <td colspan="2">학력사항</td>
+          <td colspan="2">비고</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td colspan="2">고등학교 중퇴</td>
+          <td colspan="2">프로게이머</td>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>

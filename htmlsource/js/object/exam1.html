@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 사용자로부터 이름 입력받기(영어로), 전화번호 입력받기
+      // 이름 => 대문자로 변경 후 출력
+      // 전화번호 => 000-0000-0000 => 000-####-0000
+      //   let name = prompt("영어 이름을 입력하세요.");
+      //   let phone = prompt("전화번호를 입력하세요.(예시 : 000-0000-0000)");
+
+      //   let upperName = name.toUpperCase();
+      //   let maskedPhone = phone.replace(/-(\d{4})-/, "-####-");
+
+      //   document.write(`<p>이름(대문자) : ${upperName}</p>`);
+      //   document.write(`<p>전화번호 (마스킹) : ${maskedPhone}</p>`);
+      function info() {
+        const userName = prompt("소문자로 이름을 입력하세요");
+        const userTel = prompt("전화번호를 입력하세요 (예시 : 000-0000-0000)");
+
+        document.write(userName.toUpperCase());
+        document.write("<br>");
+        document.write(userTel.replace(userTel.substring(4, 8), "####"));
+      }
+      info();
+    </script>
+  </body>
+</html>

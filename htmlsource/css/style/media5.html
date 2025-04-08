@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 전체 여백 0 */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* body : 배경색 : #333338, 글자색 #444 */
+      body {
+        background: #333338;
+        color: #444;
+      }
+      /* container : flex */
+      .container {
+        display: flex;
+      }
+      /* sidebar : 바깥여백 : 10, 안쪽여백 6, 배경색 #eee,  */
+      .sidebar {
+        margin: 10px;
+        padding: 6px;
+        background-color: #eee;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      /* panel : 바깥여백 : 10, 안쪽여백 20, 배경색 #fff,  */
+      .panel {
+        margin: 10px;
+        padding: 20px;
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="main-content">
+        <div class="panel">
+          <h1>Main Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sint aut quisquam debitis incidunt et
+            minima at laboriosam ut, possimus in corporis totam amet repudiandae illum consectetur recusandae voluptate
+            officiis.
+          </p>
+          <img src="../../image/bg.png" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam atque velit rem. Odit, voluptate
+            cupiditate voluptas dicta quisquam quas exercitationem porro animi dolorum hic nemo architecto laborum
+            praesentium recusandae tenetur eligendi totam. Quam officia non atque sit porro facere molestias magni
+            laudantium, dolorem cum. Dicta illo tenetur perferendis recusandae culpa.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem pariatur est eaque sit tempore ex numquam
+            qui omnis! Omnis unde neque sed quasi nulla pariatur, praesentium culpa nobis perspiciatis iure?
+          </p>
+          <h3>Subtitle</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum deserunt, officia suscipit consequatur
+            excepturi maiores possimus eveniet ratione ullam praesentium, ipsa alias eos quis debitis numquam hic
+            aliquid id quaerat, inventore totam deleniti qui incidunt sapiente quidem. Quia molestias dolor repellendus
+            ea est ad asperiores, eaque optio in totam nesciunt!
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum deserunt, officia suscipit consequatur
+            excepturi maiores possimus eveniet ratione ullam praesentium, ipsa alias eos quis debitis numquam hic
+            aliquid id quaerat, inventore totam deleniti qui incidunt sapiente quidem. Quia molestias dolor repellendus
+            ea est ad asperiores, eaque optio in totam nesciunt!
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum deserunt, officia suscipit consequatur
+            excepturi maiores possimus eveniet ratione ullam praesentium, ipsa alias eos quis debitis numquam hic
+            aliquid id quaerat, inventore totam deleniti qui incidunt sapiente quidem. Quia molestias dolor repellendus
+            ea est ad asperiores, eaque optio in totam nesciunt!
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum deserunt, officia suscipit consequatur
+            excepturi maiores possimus eveniet ratione ullam praesentium, ipsa alias eos quis debitis numquam hic
+            aliquid id quaerat, inventore totam deleniti qui incidunt sapiente quidem. Quia molestias dolor repellendus
+            ea est ad asperiores, eaque optio in totam nesciunt!
+          </p>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <div class="panel">
+          <h3>Item 1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eligendi nemo culpa quibusdam accusamus.</p>
+        </div>
+        <div class="panel">
+          <h3>Item 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eligendi nemo culpa quibusdam accusamus.
+            Neque ut doloremque libero, aliquam eum quo sint iure rerum repudiandae enim reprehenderit inventore, ipsum
+            quisquam.
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eligendi nemo culpa quibusdam accusamus.
+            Neque ut doloremque libero, aliquam eum quo sint iure rerum repudiandae enim reprehenderit inventore, ipsum
+            quisquam.
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Item 4</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eligendi nemo culpa quibusdam accusamus.
+            Neque ut doloremque libero, aliquam eum quo sint iure rerum repudiandae enim reprehenderit inventore, ipsum
+            quisquam.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

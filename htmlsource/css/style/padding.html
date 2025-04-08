@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        font-size: 24px;
+        background-color: brown;
+        /* width: 100%; */
+        /* height: 100px; */
+        padding: 20px;
+        /* padding(안쪽여백): 시계방향(top, right, bottom, left) */
+        /* padding: 10px 5px 15px 10px; */
+        /* padding: 10px 15px 20px; */
+      }
+      span {
+        background-color: beige;
+        /* width: 100%;
+        height: 100px; */
+        padding: 10px;
+        display: inline-block;
+      }
+      div {
+        margin: 20px; /* margin(바깥쪽여백): 시계방향(top, right, bottom, left) */
+        text-align: center;
+      }
+      div a {
+        width: 40px;
+        height: 40px;
+        background-color: blue;
+        color: white;
+        display: inline-block;
+        text-decoration: none;
+        line-height: 40px;
+      }
+      p:nth-of-type(2) {
+        /* display: none; */
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        block(p,div) : 한 행 다 사용 / width : 100%, height:0 => 내용만큼 사용, 지정가능
+        inline(a, span) : 내용만큼만 사용 / width,height 를 가질 수 없음 / 상,하 padding 가질 수 없음 /
+
+        display : inline, block, inline-block, none(요소 감춤)
+    -->
+    <p>block level</p>
+    <span>inline level</span>
+    <span>inline level2</span>
+    <div>
+      <a href="">1</a>
+      <a href="">2</a>
+      <a href="">3</a>
+      <a href="">4</a>
+      <a href="">5</a>
+    </div>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, minima. Deleniti ex beatae ratione incidunt quis,
+      doloremque adipisci, repellendus sequi labore unde nam corrupti praesentium quidem, nesciunt quod accusantium
+      repudiandae?
+    </p>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptate. Atque eum ullam veritatis laborum
+      assumenda molestias placeat voluptate qui maxime numquam magnam, corporis explicabo fugiat nam nisi quod nesciunt.
+    </div>
+  </body>
+</html>
