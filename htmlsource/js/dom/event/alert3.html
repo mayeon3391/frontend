@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .alert-box {
+        background: skyblue;
+        padding: 20px;
+        color: white;
+        border-radius: 5px;
+        margin: 10px;
+        /* 알림창 숨기기 */
+        display: none;
+        overflow: hidden;
+        position: relative;
+      }
+      button {
+        border: 0;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgb(54, 62, 228);
+        color: white;
+      }
+      .close {
+        /* X 포지션 오른쪽 상단으로 변경 */
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="alert-box">
+      알림창
+      <span class="close">X</span>
+    </div>
+    <button class="show">버튼1</button>
+    <button class="show">버튼2</button>
+    <script>
+      const alertBox = document.querySelector(".alert-box");
+      // const closeBtn = document.querySelector(".close");
+      const showBtn = document.querySelectorAll(".show");
+
+      // 버튼1 클릭시 알림창=> 아이디를 입력해주세요
+      showBtn[0].addEventListener("click", function () {
+        alertBox.innerHTML = '아이디를 입력해주세요 <span class="close">X</span>';
+        alertBox.style.display = "block";
+
+        document.querySelector(".close").addEventListener("click", function () {
+          alertBox.style.display = "none";
+        });
+      });
+
+      // 버튼2 클릭시 알림창=> 비밀번호를 입력해주세요
+      showBtn[1].addEventListener("click", function () {
+        alertBox.innerHTML = '비밀번호를 입력해주세요 <span class="close">X</span>';
+        alertBox.style.display = "block";
+
+        document.querySelector(".close").addEventListener("click", function () {
+          alertBox.style.display = "none";
+        });
+      });
+
+      // showBtn[0].addEventListener("click", () => {
+      //   alertBox.style.display = "block";
+      //   alertBox.firstChild.nodeValue = "아이디를 입력해 주세요";
+
+      //   document.querySelector(".close").addEventListener("click", function () {
+      //     alertBox.style.display = "none";
+      //   });
+      // });
+
+      // showBtn[1].addEventListener("click", () => {
+      //   alertBox.style.display = "block";
+      //   alertBox.firstChild.nodeValue = "비밀번호를 입력해 주세요";
+
+      //   document.querySelector(".close").addEventListener("click", function () {
+      //     alertBox.style.display = "none";
+      //   });
+      // });
+    </script>
+  </body>
+</html>
